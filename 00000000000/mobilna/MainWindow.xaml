@@ -1,0 +1,74 @@
+﻿<Window x:Class="AplikacjaMobilna.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gra w kości" Height="650" Width="420"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    
+    <!-- Rozkład wertykalny o kolorze tła Beige (#F5F5DC) -->
+    <StackPanel Background="#F5F5DC" Orientation="Vertical">
+
+        <!-- Napis z tytułem strony o tle Brown (#A52A2A) i białej czcionce -->
+        <Border Background="#A52A2A" HorizontalAlignment="Stretch" Padding="0,14,0,14">
+            <TextBlock Text="Gra w kości. Autor 00000000000"
+                       Foreground="White"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"/>
+        </Border>
+
+        <!-- Przycisk RZUĆ KOŚĆMI w kolorze Chocolate (#D2691E) -->
+        <Button x:Name="btnRzuc"
+                Content="RZUĆ KOŚĆMI"
+                Background="#D2691E"
+                Foreground="White"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,10"
+                Padding="25,8"
+                BorderThickness="0"
+                Cursor="Hand"
+                Click="BtnRzuc_Click"/>
+
+        <!-- Rozkład horyzontalny o białym tle dla pięciu obrazów kości -->
+        <Border Background="White" HorizontalAlignment="Stretch" Margin="0,10,0,10" Padding="0,8,0,8">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image x:Name="imgKostka1" Height="60" Margin="9" Source="question.jpg" Stretch="Uniform"/>
+                <Image x:Name="imgKostka2" Height="60" Margin="9" Source="question.jpg" Stretch="Uniform"/>
+                <Image x:Name="imgKostka3" Height="60" Margin="9" Source="question.jpg" Stretch="Uniform"/>
+                <Image x:Name="imgKostka4" Height="60" Margin="9" Source="question.jpg" Stretch="Uniform"/>
+                <Image x:Name="imgKostka5" Height="60" Margin="9" Source="question.jpg" Stretch="Uniform"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Etykieta wyniku losowania -->
+        <TextBlock x:Name="txtWynikLosowania"
+                   Text="Wynik tego losowania: 0"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,10"/>
+
+        <!-- Etykieta wyniku całej gry -->
+        <TextBlock x:Name="txtWynikGry"
+                   Text="Wynik gry: 0"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,10"/>
+
+        <!-- Przycisk RESETUJ WYNIK w kolorze Chocolate (#D2691E) -->
+        <Button x:Name="btnReset"
+                Content="RESETUJ WYNIK"
+                Background="#D2691E"
+                Foreground="White"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,10"
+                Padding="25,8"
+                BorderThickness="0"
+                Cursor="Hand"
+                Click="BtnReset_Click"/>
+
+    </StackPanel>
+</Window>

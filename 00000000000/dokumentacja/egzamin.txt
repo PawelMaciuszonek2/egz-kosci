@@ -1,0 +1,28 @@
+egzamin – informacje o narzędziach wykorzystanych na egzaminie
+
+Kwalifikacja: INF.04 - Projektowanie, programowanie i testowanie aplikacji
+Numer zadania: INF.04-01-24.06-SG
+Numer zdającego (PESEL): 00000000000
+Autor: Paweł Maciuszonek
+
+Nazwa systemu operacyjnego:
+  Microsoft Windows 11 (64-bit)
+
+Nazwy środowisk programistycznych:
+  Microsoft Visual Studio Community 2026
+  Microsoft Visual Studio Code
+  Terminal Windows PowerShell (dotnet CLI)
+
+Nazwa emulatora dla aplikacji mobilnej:
+  Emulator Pixel 5 (Android 13 / API 33) oraz natywne środowisko uruchomieniowe .NET / Windows (WPF/MAUI)
+
+Nazwy języków programowania:
+  C# (.NET 10) – aplikacja konsolowa oraz logika aplikacji mobilnej
+  XAML (XML) – warstwa interfejsu graficznego aplikacji mobilnej
+
+Pliki zrzutów ekranowych:
+  konsola1.png – kompilacja dotnet build oraz przebieg gry w kości z arkusza (14 pkt i 6 pkt)
+  konsola2.png – przebieg gry dla 10 kości i opcja zakończenia 'n'
+  mobile1.png  – stan początkowy aplikacji mobilnej (5 x question.jpg, wynik: 0)
+  mobile2.png  – po wciśnięciu przycisku RZUĆ KOŚĆMI (grafiki kości, wynik losowania i gry: 14)
+  mobile3.png  – po wciśnięciu przycisku RESETUJ WYNIK (reset grafik i wyzerowanie wyników)
